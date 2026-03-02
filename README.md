@@ -63,4 +63,73 @@ The prediction model uses the following medical parameters:
 - Thalassemia Type
 
 ---
+## Machine Learning Model
+
+The system uses a supervised classification approach.
+
+Key implementation details:
+- Scikit‑Learn Pipeline for preprocessing + prediction
+- ColumnTransformer for handling feature transformations
+- Probability‑based prediction using `predict_proba()`
+
+### Evaluation Metrics
+The model was evaluated using:
+- Accuracy
+- Precision
+- Recall
+- F1‑Score
+
+---
+
+## Application Features
+• Interactive clinical input form  
+• Real‑time prediction  
+• Risk percentage display  
+• Visual risk indicator (progress bar)  
+• Basic clinical recommendation  
+• Publicly deployed web app
+
+---
+
+## System Architecture
+
+User Input  
+↓  
+Streamlit Web Interface  
+↓  
+Input Validation & Feature Processing  
+↓  
+Pandas DataFrame Construction  
+↓  
+Machine Learning Pipeline  
+↓  
+Prediction & Probability Calculation  
+↓  
+Risk Visualization & Recommendation
+
+---
+
+## Running the Project Locally
+
+### 1. Clone the Repository git clone https://github.com/krishna-dave206/Heart-Disease-Risk-Assessment-System.git
+### 2. Install Dependencies                                                                                                                                                                                                                                                             pip install -r requirements.txt 
+### 3. Run the Application                                                                                                                                                                                                                                                                streamlit run app.py
+---
+
+## Deployment
+The application is deployed using Streamlit Cloud and accessible through the public project link provided in submission.
+
+---
+
+## Disclaimer
+This project is created for educational and research purposes only.  
+It should not be used for real medical diagnosis or treatment decisions. Always consult a qualified healthcare professional.
+
+---
+
+## Team Members
+Krishna Dave  
+Vriha Dholiya  
+Rishita Boisnobi
+
 
